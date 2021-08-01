@@ -1,0 +1,390 @@
+:root {
+    --primary-color: rgb(70, 70, 70);
+    --secondary-color: rgb(116, 116, 116);
+
+    --navy-color: #2a538b;
+    --light-blue: #378aff;
+
+    --shadow: #f5f5f5;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-variant-caps: all-small-caps;
+    color: var(--primary-color);
+}
+
+h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+}
+
+p, span {
+    color: var(--secondary-color);
+}
+
+.btn {
+    border: 0;
+    padding: .5rem;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-download {
+    border-bottom-left-radius: 1rem;
+    background-color: white;
+}
+
+.btn-download:hover {
+    transition: all .3s;
+
+    filter: brightness(90%);
+}
+
+.btn-download span {
+    color: var(--navy-color);
+    font-variant-caps: all-small-caps;
+    font-weight: bold;
+}
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    
+    background-color: var(--shadow);
+}
+
+.cv {
+    position: relative;
+    background-color: white;
+   
+    width: 21cm;
+    height: 29.7cm;
+}
+
+.overlay-gui {
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/*CV-HEADER*/
+.cv-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+    height: 25%;
+    background-color: var(--navy-color);
+}
+
+.profile-img {
+    border-radius: 50%;
+}
+
+.profile-info h1 {
+    font-size: 50px;
+}
+
+.profile-info h2 {
+    font-weight: normal;
+}
+/*///CV-HEADER*/
+
+/*CV-BODY*/
+.cv-body {
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+
+    height: 75%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row {
+    width: 100%;
+    
+    display: flex;
+}
+
+.row.details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.info-box i {
+    color: var(--primary-color) !important;
+}
+
+.icon-wrapper {
+    height: 35px;
+    width: 40px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 50%;
+
+    padding: .5rem;
+}
+
+.box h1 {
+    color: var(--navy-color);
+}
+
+.skills-wrapper  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+}
+
+.progress-container {  
+    width: 50%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-label h5 {
+    margin-bottom: .3rem;
+}
+
+.progress-wrapper {
+    background-color: rgb(238, 238, 238);
+
+    width: 100%;
+    height: 8px;
+    border-radius: 15px;
+}
+
+.progress {
+    border-radius: 15px;
+    height: 8px;
+}
+
+.progress.green {
+    background-color: rgb(53, 170, 32);
+}
+.progress.yellow {
+    background-color: rgb(226, 247, 38);
+}
+.progress.orange {
+    background-color: rgb(235, 175, 47);
+}
+.progress.red {
+    background-color: rgb(170, 32, 32);
+}
+/*///CV-BODY*/
+
+/*Utils*/
+.w-100 {
+    width: 100% !important;
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+.mb-sm {
+    margin-bottom: .4rem;
+}
+
+.mb-md {
+    margin-bottom: 1.3rem;
+}
+
+.mb-lg {
+    margin-bottom: 2rem;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+
+.pl-sm {
+    padding-left: .5rem;
+}
+
+.pr-sm {
+    padding-right: .5rem;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.text-lightb {
+    color: var(--light-blue) !important;
+}
+
+.divisor {
+    height: 3px;
+    width: 100%;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 50px;
+}
+
+.divisor.white {
+    background-color: white;
+}
+
+.divisor.navy {
+    margin-top: .5rem;
+    width: 50px;
+    background-color: var(--navy-color);
+}
+
+/*///Utils*/
+
+/*SKILLS COLORS*/
+
+.html-color {
+    color: rgb(255, 123, 0);
+}
+.js-color {
+    color: rgb(246, 230, 0);
+}
+.css-color {
+    color: rgb(0, 162, 255);
+}
+.sass-color {
+    color: rgb(255, 160, 223);
+}
+.java-color {
+    color: rgb(84, 156, 197);
+}
+.nodejs-color {
+    color: rgb(19, 151, 30);
+}
+.bootstrap-color {
+    color: rgb(140, 0, 255);
+}
+.gulp-color {
+    color: rgb(240, 85, 58);
+}
+.grunt-color {
+    color: rgb(255, 159, 49);
+}
+.react-color {
+    color: rgb(0, 195, 255);
+}
+/*///SKILLS COLORS*/
+
+/*EVENTS*/
+.skill:hover {
+    transition: .3s;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+    cursor: pointer;
+}
+/*///EVENTS*/
+
+/*DROPDOWN*/
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+    height: 50px;
+    width: 50px;
+    
+    border-bottom-right-radius: 1rem;
+    background-color: white;
+
+    cursor: pointer;
+}
+
+.dropdown div.flag {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover {
+    border-bottom-right-radius: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-bottom-right-radius: 1rem;
+}
+
+.dropdown-content:hover div.flag {
+    background-color: rgb(230, 230, 230);
+    border-bottom-right-radius: 1rem;
+}
+/*///DROPDOWN*/
+
+@media print {
+    body {
+        width: 21cm;
+        height: 29.7cm;
+    } 
+
+    .no-print {
+        display: none !important;
+    }
+}
