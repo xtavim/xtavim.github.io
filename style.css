@@ -99,6 +99,7 @@ p, span {
 
 .profile-img {
     border-radius: 50%;
+    border: solid white;
 }
 
 .profile-info h1 {
