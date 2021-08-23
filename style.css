@@ -11,6 +11,8 @@
 html, body {
     height: 100%;
     width: 100%;
+    
+    background-color: var(--shadow);
 }
 
 * {
@@ -69,8 +71,6 @@ p, span {
 
     display: flex;
     justify-content: center;
-    
-    background-color: var(--shadow);
 }
 
 .cv {
